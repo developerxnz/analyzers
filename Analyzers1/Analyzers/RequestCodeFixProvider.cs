@@ -49,7 +49,7 @@ public class RequestCodeFixProvider : CodeFixProvider
         // Register a code action that will invoke the fix.
         context.RegisterCodeFix(
             CodeAction.Create(
-                title: string.Format(Resources.FL0001Title, RequestSyntaxAnalyzer.CompanyName, CommonName),
+                title: Resources.FL0001Title,
                 createChangedSolution: c => SanitizeCompanyNameAsync(context.Document, declaration, c),
                 equivalenceKey: nameof(Resources.FL0001Title)),
             diagnostic);

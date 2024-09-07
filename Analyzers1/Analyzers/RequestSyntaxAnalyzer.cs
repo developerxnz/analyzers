@@ -15,8 +15,6 @@ namespace Analyzers;
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 public class RequestSyntaxAnalyzer : DiagnosticAnalyzer
 {
-    public const string CompanyName = "RequestName";
-
     // Preferred format of DiagnosticId is Your Prefix + Number, e.g. CA1234.
     public const string DiagnosticId = "FL0001";
 
